@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Newtonsoft.Json.Serialization;
 
 namespace AnabizFarmSales
 {
@@ -31,7 +32,9 @@ namespace AnabizFarmSales
 
             services.AddDbContext<AnabizFarmSalesContext>(opt => opt.UseSqlServer(Configuration.GetConnectionString("AnabizFarmSalesConnection")));
 
-            services.AddControllers();
+            services.AddControllers().AddNewtonsoftJson(s=> {
+                s.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            });
 
             //services.AddScoped<ICommanderRepo, MockCommanderRepo>();
 

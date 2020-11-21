@@ -13,6 +13,10 @@ namespace AnabizFarmSales.Data
 
         void CreateFarmSale(FarmSale cmd);
 
- 
+        void UpdateFarmSale(FarmSale cmd);
+
+        void DeleteFarmSale(FarmSale cmd);
+
+
     }
 }

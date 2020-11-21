@@ -25,6 +25,14 @@ namespace AnabizFarmSales.Data
             _context.FarmSales.Add(cmd);
         }
 
+        public void DeleteFarmSale(FarmSale cmd)
+        {
+            if (cmd == null)
+            {
+                throw new ArgumentNullException(nameof(cmd));
+            }
+            _context.FarmSales.Remove(cmd);
+        }
 
         public IEnumerable<FarmSale> GetAllSales()
         {
@@ -41,5 +49,11 @@ namespace AnabizFarmSales.Data
         {
             return (_context.SaveChanges() >= 0);
         }
+
+        public void UpdateFarmSale(FarmSale cmd)
+        {
+            //Do nothing
+        }
+
     }
 }

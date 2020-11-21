@@ -11,6 +11,11 @@ namespace AnabizFarmSales.Data
             throw new NotImplementedException();
         }
 
+        public void DeleteFarmSale(FarmSale cmd)
+        {
+            throw new NotImplementedException();
+        }
+
         public IEnumerable<FarmSale> GetAllSales()
         {
             var farmSales = new List<FarmSale>
@@ -42,6 +47,11 @@ namespace AnabizFarmSales.Data
         }
 
         public bool SaveChanges()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void UpdateFarmSale(FarmSale cmd)
         {
             throw new NotImplementedException();
         }

@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace AnabizFarmSales.Dtos
 {
-    public class AnabizFarmSalesCreateDto
+    public class AnabizFarmSalesUpdateDto
     {
 
         [Required]
@@ -24,7 +24,7 @@ namespace AnabizFarmSales.Dtos
 
         public string Age { get; set; }
 
-       
+
 
     }
 }

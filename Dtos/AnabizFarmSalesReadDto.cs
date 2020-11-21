@@ -12,10 +12,6 @@ namespace AnabizFarmSales.Dtos
 
         public string Amount { get; set; }
 
-        public string TotalWeight { get; set; }
-
-        public string Age { get; set; }
-
         public DateTime CreatedAt { get; set; }
      
     }

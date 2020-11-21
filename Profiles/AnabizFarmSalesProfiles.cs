@@ -12,7 +12,8 @@ namespace AnabizFarmSales.Profiles
             //Source -> Target
             CreateMap<FarmSale, AnabizFarmSalesReadDto>();
             CreateMap<AnabizFarmSalesCreateDto, FarmSale>();
-
+            CreateMap<AnabizFarmSalesUpdateDto, FarmSale>();
+            CreateMap<FarmSale, AnabizFarmSalesUpdateDto>();
         }
     }
 }

@@ -27,36 +27,5 @@ namespace AnabizFarmSales.Modals
 
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
-
-       // public ICollection<FarmSaler> FarmSalers { get; set; }
     }
-
-
-
-    //public class FarmSaler
-    //{
-    //    public int Id { get; set; }
-
-    //    public string PigType { get; set; }
-
-    //    public int NoOfPigs { get; set; }
-
-    //    public string Amount { get; set; }
-
-    //    public string TotalWeight { get; set; }
-
-    //    public string Age { get; set; }
-
-    //    public DateTime CreatedAt { get; set; } = DateTime.Now;
-
-
-    //    //public int FarmSalesId { get; set; }
-
-    //    //public FarmSales FarmSales { get; set; }
-
-
-    //    public int FarmSalesId { get; set; }
-
-    //    public FarmSales FarmSales { get; set; }
-    //}
 }

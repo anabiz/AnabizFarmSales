@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AnabizFarmSales.Migrations
 {
     [DbContext(typeof(AnabizFarmSalesContext))]
-    [Migration("20201120210154_initialMigration")]
+    [Migration("20201121125016_initialMigration")]
     partial class initialMigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,19 +32,26 @@ namespace AnabizFarmSales.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Amount")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(255)
+                        .HasColumnType("nvarchar(255)");
 
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
                     b.Property<int>("NoOfPigs")
+                        .HasMaxLength(10)
                         .HasColumnType("int");
 
                     b.Property<string>("PigType")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.Property<string>("TotalWeight")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(12)
+                        .HasColumnType("nvarchar(12)");
 
                     b.HasKey("Id");
 

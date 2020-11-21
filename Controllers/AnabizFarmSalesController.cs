@@ -66,8 +66,11 @@ namespace AnabizFarmSales.Controllers
         public ActionResult UpdateFarmsale(int id, AnabizFarmSalesUpdateDto anabizFarmSalesUpdateDto)
         {
             var anabizFarmSalesModelFromRepo = _repository.GetSalesById(id);
+          
+
             if(anabizFarmSalesModelFromRepo == null)
             {
+                //Console.WriteLine("yess");
                 return NotFound();
             };
 

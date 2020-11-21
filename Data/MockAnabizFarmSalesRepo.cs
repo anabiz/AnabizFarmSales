@@ -8,12 +8,12 @@ namespace AnabizFarmSales.Data
     {
         public void CreateFarmSale(FarmSale cmd)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public void DeleteFarmSale(FarmSale cmd)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
 
         public IEnumerable<FarmSale> GetAllSales()
@@ -53,7 +53,7 @@ namespace AnabizFarmSales.Data
 
         public void UpdateFarmSale(FarmSale cmd)
         {
-            throw new NotImplementedException();
+            //throw new NotImplementedException();
         }
     }
 }

@@ -13,10 +13,10 @@ namespace AnabizFarmSales.Migrations
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    PigType = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    NoOfPigs = table.Column<int>(type: "int", nullable: false),
-                    Amount = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    TotalWeight = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    PigType = table.Column<string>(type: "nvarchar(10)", maxLength: 10, nullable: false),
+                    NoOfPigs = table.Column<int>(type: "int", maxLength: 10, nullable: false),
+                    Amount = table.Column<string>(type: "nvarchar(255)", maxLength: 255, nullable: false),
+                    TotalWeight = table.Column<string>(type: "nvarchar(12)", maxLength: 12, nullable: false),
                     Age = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     CreatedAt = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
